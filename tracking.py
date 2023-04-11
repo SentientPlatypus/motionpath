@@ -41,7 +41,7 @@ while(1):
         print('No frames grabbed!')
         break
 
-    base = frame
+    blank = np.zeros_like(frame)
     newcenter = get_center_img_pipeline(frame)
 
     cv.circle(frame, newcenter, 5, (0, 255, 0), -1)
@@ -50,9 +50,10 @@ while(1):
 
     for i in range(len(centersLog) - 1):
         cv.line(frame, centersLog[i], centersLog[i+1], (255, 255, 255), 2)
-    
+        cv.line(blank, centersLog[i], centersLog[i+1], (255, 255, 255), 2)
 
     cv.imshow("f", frame)
+    cv.imshow("blank", blank)
     cv.waitKey(1)
 
     
