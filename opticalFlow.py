@@ -24,7 +24,6 @@ def draw_hsv(flow):
 
     ang = np.arctan2(fy, fx) + np.pi
     v = np.sqrt(fx**2 + fy**2)
-    print(v)
 
     hsv = np.zeros((h,w,3), np.uint8)
     hsv[..., 0 ] = ang*(180/np.pi/2)
