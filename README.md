@@ -1,7 +1,7 @@
 # Motion
 
 Motion is a collection of scripts meant to track motion of an object through time. 
-I watched a robotics seminar earlier today by Shuran Song from Columbia. The talk was mainly about using vision to handle non-rigid objects like ropes and cloth. During the talk, there was several displays of the path of a rope being tracked by some algorithm. I wanted to mimic that out of curiosity.
+I watched a robotics seminar earlier today by Shuran Song from Columbia. The talk was mainly about using vision to handle non-rigid objects like ropes and cloth. During the talk, there was several displays of the path of a rope being tracked by some algorithm. I wanted to mimic that out of curiosity. Their code is found here: https://github.com/columbia-ai-robotics/irp
 
 <img src="nerfDISPLAY.png">
 <img src="blankDISPLAY.png">
